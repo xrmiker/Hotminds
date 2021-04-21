@@ -1,0 +1,69 @@
+<DatasmithUnrealScene>
+	<Version>0.24</Version>
+	<SDKVersion>4.26.2</SDKVersion>
+	<Host>Autodesk 3dsmax 21.0.845Scanline Renderer</Host>
+	<Application Vendor="Autodesk" ProductName="3dsmax" ProductVersion="21.0.845"/>
+	<ResourcePath></ResourcePath>
+	<User ID="64d465f24122195daf319ab110fad533" OS="Windows 8"/>
+	<StaticMesh name="2" label="Solido1">
+		<file path="Coperchio_Assets/2.udsmesh"/>
+		<Size a="566.940918" x="31.06889" y="31.074362" z="2.450028"/>
+		<LightmapCoordinateIndex value="-1"/>
+		<LightmapUV value="-1"/>
+		<Hash value="c321dfdd712f9a3cd3d752b9a195d062"/>
+		<Material id="1" name="lambert1"/>
+	</StaticMesh>
+	<Actor name="1" label="9_04_00_000068___FONDO__307_TAPA_CUBETA_ABIERTA_12" layer="0">
+		<Transform tx="0.0" ty="0.0" tz="0.0" sx="1.0" sy="1.0" sz="1.0" qx="0.0" qy="0.0" qz="0.0" qw="1.0" qhex="2EBDBB3300000000000000800000803F"/>
+		<tag value="Max.superclassof: helper" />
+		<tag value="Max.classof: Dummy" />
+		<tag value="Max.handle: 1" />
+		<tag value="Max.isGroupHead: false" />
+		<tag value="Max.isGroupMember: false" />
+		<tag value="Max.parent.handle: 0" />
+		<children visible="true"  selector="false" selection="-1">
+			<ActorMesh name="2" label="Solido1" layer="0">
+				<mesh name="2"/>
+				<Transform tx="-0.000002" ty="0.0" tz="-0.000007" sx="1.0" sy="1.0" sz="1.0" qx="0.000001" qy="0.0" qz="-0.0" qw="1.0" qhex="4CEF6E35000000296221A2A80000803F"/>
+				<tag value="Max.superclassof: GeometryClass" />
+				<tag value="Max.classof: Editable_mesh" />
+				<tag value="Max.handle: 2" />
+				<tag value="Max.isGroupHead: false" />
+				<tag value="Max.isGroupMember: false" />
+				<tag value="Max.parent.handle: 1" />
+			</ActorMesh>
+		</children>
+	</Actor>
+	<UEPbrMaterial name="lambert1">
+		<Expressions>
+			<Color Name="Diffuse_Color" constant="(R=0.400000,G=0.400000,B=0.400000,A=1.000000)"/>
+			<Scalar Name="Glossiness" constant="0.01"/>
+			<OneMinus Name="">
+				<Input Name="0" expression="1" OutputIndex="0"/>
+			</OneMinus>
+			<Color Name="Specular" constant="(R=0.000000,G=0.000000,B=0.000000,A=1.000000)"/>
+			<Scalar Name="Specular_Level" constant="0.0"/>
+			<Multiply Name="">
+				<Input Name="0" expression="4" OutputIndex="0"/>
+				<Input Name="1" expression="1" OutputIndex="0"/>
+			</Multiply>
+			<Multiply Name="">
+				<Input Name="0" expression="3" OutputIndex="0"/>
+				<Input Name="1" expression="5" OutputIndex="0"/>
+			</Multiply>
+			<FunctionCall Function="MaterialFunction'/Engine/Functions/Engine_MaterialFunctions01/Shading/ConvertFromDiffSpec.ConvertFromDiffSpec'">
+				<Input Name="0" expression="0" OutputIndex="0"/>
+				<Input Name="1" expression="6" OutputIndex="0"/>
+			</FunctionCall>
+		</Expressions>
+		<Input Name="BaseColor" expression="7" OutputIndex="0"/>
+		<Input Name="Metallic" expression="7" OutputIndex="1"/>
+		<Input Name="Roughness" expression="2" OutputIndex="0"/>
+		<Input Name="Specular" expression="7" OutputIndex="2"/>
+		<OpacityMaskClipValue value="0.3333"/>
+	</UEPbrMaterial>
+	<MetaData name="2" reference="Actor.2">
+		<KeyValueProperty name="MapChannel_1" type="String" val="UVChannel_1"/>
+	</MetaData>
+	<Export Duration="0"/>
+</DatasmithUnrealScene>

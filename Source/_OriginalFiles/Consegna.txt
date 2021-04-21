@@ -1,0 +1,7 @@
+. aprire il modello della macchina, con software a piacere, e di pulirlo (correzione di errori, rimozione di tutte le superfici non in vista dall'esterno, fusione di spigoli aperti, ecc..) con target di circa 100k triangoli. (giusto per dare un ordine di grandezza, ma se sono 50k o 250k non è un problema);
+
+. importare la mesh in un progetto vuoto di unreal, preparare ed assegnare qualche materiale ai pezzi della macchina;
+
+. importare separatamente la "ruota" ed il prodotto (che sono le uniche due mesh da animare);
+
+. animare un singolo "loop" di animazione della macchina, usando lo strumento sequencer di unreal.
